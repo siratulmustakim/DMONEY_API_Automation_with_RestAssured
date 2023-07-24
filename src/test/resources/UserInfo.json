@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Customer",
+    "phone_number": "01980855610"
+  },
+  {
+    "role": "Customer",
+    "phone_number": "01980825510"
+  },
+  {
+    "role": "Agent",
+    "phone_number": "01980958710"
+  }
+]

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="API Automation">
+
+    <test name="Login as Admin and create two new customers and one agent">
+        <classes>
+            <class name="testRunner.UserTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="System/Admin deposits to agent and then agent deposits to customer_1">
+        <classes>
+            <class name="testRunner.DepositTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="Customer_1 withdraws money">
+        <classes>
+            <class name="testRunner.WithdrawTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="Customer_1 sends money to customer_2">
+        <classes>
+            <class name="testRunner.MoneySendTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="Customer_2 makes payment to a merchant">
+        <classes>
+            <class name="testRunner.PaymentTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="Customer_2 checks account balance">
+        <classes>
+            <class name="testRunner.CheckBLTestRunner"></class>
+        </classes>
+    </test>
+
+</suite>
+
+<!--clear the UserInfo.json if you run multiple times. otherwise will get error-->
